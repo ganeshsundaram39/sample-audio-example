@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "sampe-application",
+    "slug": "Sample-application",
+    "version": "1.0.0",
+    "orientation": "portrait",
+
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/stones.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#f0f0f0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f0f0f0"
+      },
+      "package": "com.ganeshsundaram39.SampleApplication"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router", "expo-font"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a14a1a7f-73c1-4fd9-8a54-c2247566343c"
+      }
+    }
+  }
+}
